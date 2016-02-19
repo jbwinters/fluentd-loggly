@@ -1,12 +1,11 @@
 FROM fluent/fluentd:latest
-MAINTAINER your_name <...>
+MAINTAINER Josh Winters
 
 USER fluent
 WORKDIR /home/fluent
 
 ENV PATH /home/fluent/.gem/ruby/2.2.0/bin:$PATH
 
-RUN gem install fluent-plugin-parser
 RUN gem install fluent-plugin-loggly
 
 EXPOSE 24284
