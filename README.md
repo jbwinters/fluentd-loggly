@@ -1,10 +1,9 @@
 #### To run:
+This images substitutes `#LOGGLY_TOKEN` for the environment variable `$LOGGLY_TOKEN` (see `fluent.conf`).
 
 ```
 docker run -p 24224:24224 -e LOGGLY_TOKEN=$LOGGLY_TOKEN myfluentd:latest
-docker run -p 24224:24224 -e LOGGLY_TOKEN=$LOGGLY_TOKEN -e LOGGLY_CONF=$LOGGLY_CONF myfluentd:latest
 ```
-(where `$LOGGLY_CONF` is a loggly-specific configuration file)
 
 #### To test:
 
